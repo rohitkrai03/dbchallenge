@@ -33,5 +33,7 @@ All the new files have been added in `es6` directory.
     * first sparkline is generated when first data comes for each of the currency pair. Then it refreshes every 30 seconds as stated above.
 * Tests have been written for all files except `AppView`
 
+```
 Name - Rohit Rai
 Email - rohitkrai03@gmail.com
+```
