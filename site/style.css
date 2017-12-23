@@ -8,37 +8,17 @@ body {
     /*background-color: #1F2739;*/
 }
 
-h1 {
-    font-size: 3em;
-    font-weight: 300;
-    line-height: 1em;
-    text-align: center;
-    color: #4DC3FA;
-}
-
-h2 {
-    font-size: 1em;
-    font-weight: 300;
-    text-align: center;
-    display: block;
-    line-height: 1em;
-    padding-bottom: 2em;
-    color: #FB667A;
-}
-
-h2 a {
-    font-weight: 700;
+.currency-name {
     text-transform: uppercase;
-    color: #FB667A;
-    text-decoration: none;
 }
 
-.blue {
-    color: #185875;
+.sparkline {
+    text-align: center;
 }
 
-.yellow {
-    color: #FFF842;
+#stomp-status {
+    margin-top: 15px;
+    text-align: center;
 }
 
 
@@ -60,6 +40,10 @@ table tr {
     background: #f8f8f8;
     border: 1px solid #ddd;
     padding: .5em;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0f0f0;
 }
 
 table td {

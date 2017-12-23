@@ -12,7 +12,7 @@
 <!-- This is a description of what you should do for this task.  You can remove it for your answer -->
 
 <table>
-  <caption>Statement Summary</caption>
+  <caption>Foriegn Exchange Prices</caption>
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -24,42 +24,21 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td data-label="Account">Visa - 3412</td>
-      <td data-label="Due Date">04/01/2016</td>
-      <td data-label="Amount">$1,190</td>
-      <td data-label="Period">03/01/2016 - 03/31/2016</td>
-      <td data-label="Amount">$1,190</td>
-      <td data-label="Period">03/01/2016 - 03/31/2016</td>
-    </tr>
-    <tr>
-      <td scope="row" data-label="Account">Visa - 6076</td>
-      <td data-label="Due Date">03/01/2016</td>
-      <td data-label="Amount">$2,443</td>
-      <td data-label="Period">02/01/2016 - 02/29/2016</td>
-      <td data-label="Amount">$1,190</td>
-      <td data-label="Period">03/01/2016 - 03/31/2016</td>
-    </tr>
-    <tr>
-      <td scope="row" data-label="Account">Corporate AMEX</td>
-      <td data-label="Due Date">03/01/2016</td>
-      <td data-label="Amount">$1,181</td>
-      <td data-label="Period">02/01/2016 - 02/29/2016</td>
-      <td data-label="Amount">$1,190</td>
-      <td data-label="Period">03/01/2016 - 03/31/2016</td>
-    </tr>
-    <tr>
-      <td scope="row" data-label="Acount">Visa - 3412</td>
-      <td data-label="Due Date">02/01/2016</td>
-      <td data-label="Amount">$842</td>
-      <td data-label="Period">01/01/2016 - 01/31/2016</td>
-      <td data-label="Amount">$1,190</td>
-      <td data-label="Period">03/01/2016 - 03/31/2016</td>
-    </tr>
+    
   </tbody>
 </table>
-<section class="content">
-    
+<section id="stomp-status">
+  It hasn't yet connected to the stomp server.  If this state persists for a significant length of time, check
+  <ul>
+      <li>that you are running a browser that supports javascript and WebSockets</li>
+      <li>that you have run the development server by going into the db-updating-table directory and
+          run it by running <code>npm start</code></li>
+      <li>that there were no errors during the development server starting (e.g. perhaps port
+          8011 was taken)</li>
+      <li>that you are accessing it through that dev server, at <a href="http://localhost:8011">http://localhost:8011</a>
+          and that no errors are appearing in your browsers console.</li>
+  </ul>
+  If none of that works, then ask for help by emailing <a href="mailto:adam.iley@db.com">adam.iley@db.com</a>.
 </section>
 
 <!-- Code you write in index.js and anything it depends on will be bundled into bundle.js and
