@@ -1,0 +1,121 @@
+/* This css file is included by being imported in index.js */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color: #A7A1AE;
+    /*background-color: #1F2739;*/
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height: 1em;
+    padding-bottom: 2em;
+    color: #FB667A;
+}
+
+h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FB667A;
+    text-decoration: none;
+}
+
+.blue {
+    color: #185875;
+}
+
+.yellow {
+    color: #FFF842;
+}
+
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .5em;
+}
+
+table td {
+    font-weight: normal;
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: #185875;
+    padding: 1em;
+    /*letter-spacing: .1em;*/
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        border: 0;
+    }
+    table caption {
+        font-size: 1.3em;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    table td:before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
