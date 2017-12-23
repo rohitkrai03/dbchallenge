@@ -3,18 +3,18 @@ const Stomp = require('stompjs')
 const util = require('util')
 
 const startPrices = {
-  gbpusd: 1.4587,
-  gbpeur: 1.288,
-  gbpaud: 1.9107,
-  usdeur: 0.883,
-  gbpjpy: 158.29,
-  usdjpy: 108.505,
-  eurjpy: 122.91,
-  gbpchf: 1.4126,
-  euraud: 1.4834,
-  eurchf: 1.0969,
-  eurcad: 1.4214,
-  gbpcad: 1.8303
+  'gbp/usd': 1.4587,
+  'gbp/eur': 1.288,
+  'gbp/aud': 1.9107,
+  'usd/eur': 0.883,
+  'gbp/jpy': 158.29,
+  'usd/jpy': 108.505,
+  'eur/jpy': 122.91,
+  'gbp/chf': 1.4126,
+  'eur/aud': 1.4834,
+  'eur/chf': 1.0969,
+  'eur/cad': 1.4214,
+  'gbp/cad': 1.8303
 }
 
 const currencies = Object.keys(startPrices)

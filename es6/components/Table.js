@@ -29,9 +29,10 @@ export default class Table {
     } else {
       this.presentCurrencies[data.name] = new TableRow(data)
       this.rows.push(this.presentCurrencies[data.name])
+      console.log(this.rows);
     }
     this.rows.sort((row1, row2) => {
-      return row1.currency.lastBid - row2.currency.lastBid;
+      return row1.currency.lastChangeBid - row2.currency.lastChangeBid;
     });
     this.fire()
   }

@@ -4,7 +4,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     line-height: 1.42em;
-    color: #A7A1AE;
+    color: #87A1AE;
     /*background-color: #1F2739;*/
 }
 
@@ -32,6 +32,7 @@ table {
 }
 
 table caption {
+    color: #185875;
     font-size: 1.5em;
     margin: .5em 0 .75em;
 }
@@ -95,6 +96,7 @@ table th {
     content: attr(aria-label);
     */
         content: attr(data-label);
+        color: #185875;
         float: left;
         font-weight: bold;
         text-transform: uppercase;

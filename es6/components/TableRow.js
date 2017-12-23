@@ -18,16 +18,16 @@ export default class TableRow {
       this.name.textContent = this.currency.name
       this.bestBid.textContent = this.currency.bestBid
       this.bestAsk.textContent = this.currency.bestAsk
-      this.lastBid.textContent = this.currency.lastBid
-      this.lastAsk.textContent = this.currency.lastAsk
+      this.lastChangeBid.textContent = this.currency.lastChangeBid
+      this.lastChangeAsk.textContent = this.currency.lastChangeAsk
       return this.rowNode
     }
     const row = document.createElement('tr')
     const name = document.createElement('td')
     const bestBid = document.createElement('td')
     const bestAsk = document.createElement('td')
-    const lastBid = document.createElement('td')
-    const lastAsk = document.createElement('td')
+    const lastChangeBid = document.createElement('td')
+    const lastChangeAsk = document.createElement('td')
     const sparkLine = document.createElement('td')
     const sparks = document.createElement('span')
     
@@ -41,11 +41,11 @@ export default class TableRow {
     bestAsk.textContent = this.currency.bestAsk
     bestAsk.setAttribute('data-label', 'Current Best Ask')
     
-    lastBid.textContent = this.currency.lastBid
-    lastBid.setAttribute('data-label', 'Last Best Bid')
+    lastChangeBid.textContent = this.currency.lastChangeBid
+    lastChangeBid.setAttribute('data-label', 'Last Change Best Bid')
     
-    lastAsk.textContent = this.currency.lastAsk
-    lastAsk.setAttribute('data-label', 'Last Besk Ask')
+    lastChangeAsk.textContent = this.currency.lastChangeAsk
+    lastChangeAsk.setAttribute('data-label', 'Last Change Besk Ask')
     
     sparkLine.setAttribute('class', 'sparkline');
     sparkLine.appendChild(sparks)
@@ -53,16 +53,16 @@ export default class TableRow {
     row.appendChild(name)
     row.appendChild(bestBid)
     row.appendChild(bestAsk)
-    row.appendChild(lastBid)
-    row.appendChild(lastAsk)
+    row.appendChild(lastChangeBid)
+    row.appendChild(lastChangeAsk)
     row.appendChild(sparkLine)
 
     this.rowNode = row
     this.name = name
     this.bestBid = bestBid
     this.bestAsk = bestAsk
-    this.lastBid = lastBid
-    this.lastAsk = lastAsk
+    this.lastChangeBid = lastChangeBid
+    this.lastChangeAsk = lastChangeAsk
     this.sparks = sparks
     return this.rowNode
   }

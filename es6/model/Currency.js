@@ -1,16 +1,21 @@
 
 export default class Currency {
-  constructor() {
+  constructor(data) {
     this.historicalData = [];
+
+    this.updateData = this.updateData.bind(this)
+    this.getSparkLineData = this.getSparkLineData.bind(this)
+    this.resetHistoricalData = this.resetHistoricalData.bind(this)
+
+    this.updateData(data)
   }
 
   updateData(data) {
-    const name = data.name;
-    this.name = name.slice(0, name.length/2) + '/' + name.slice(name.length/2);
+    this.name = data.name;
     this.bestBid = data.bestBid;
     this.bestAsk = data.bestAsk;
-    this.lastBid = data.lastChangeBid;
-    this.lastAsk = data.lastChangeAsk;
+    this.lastChangeBid = data.lastChangeBid;
+    this.lastChangeAsk = data.lastChangeAsk;
     this.historicalData.push([data.bestBid, data.bestAsk]);
   }
 
